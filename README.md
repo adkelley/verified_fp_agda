@@ -21,4 +21,4 @@ These are the steps that I took to install Agda and support it in my Emacs confi
 
 
 ## Code examples from the book
-These are located on github [IAL](https://github.com/cedille/ial).  The book mentions that their located at 
+These are located on github [IAL](https://github.com/cedille/ial).  The book mentions that they're located and have been tested with http://svn.divms.uiowa.edu/repos/clc/projects/agda/ial-releases/1.2, but these code examples (e.g., bool.agda) gave me some compiler deprecation warnings.  Note that the [IAL README](https://svn.divms.uiowa.edu/repos/clc/projects/agda/ial-releases/README.txt) mentions that the development of the IAL has shifted from svn to github.

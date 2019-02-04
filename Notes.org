@@ -1,8 +1,6 @@
-* Aaron Stump's book "Verified Functional Programming in Agda" 
+* 01
 
-** Chapter 01
-
-** TODO Fix problem importing 'level'
+* TODO Fix problem importing 'level'
 
 I had the following when attempting to import 'level' in bool.agda:
 
@@ -15,6 +13,6 @@ When scope checking the declaration
   open import level
 ```
 
-My temporary fix (until I can find a permanent solution ) is to create 'level' locally and rename to 'level_'.
+My temporary fix for this is to create 'level' locally and rename to 'level_'.
 Then, open import 'level_'
  
