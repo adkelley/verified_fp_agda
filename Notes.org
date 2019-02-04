@@ -8,26 +8,20 @@
 
 I had the following when attempting to import 'level' in bool.agda:
 
-```
 .../verified_fp_agda/01/bool.agda:3,13-18
-The file /usr/local/Cellar/agda/2.5.4.2/lib/agda/src/Level.agda can
-be accessed via several project roots. Both Level and level point
-to this file.
-When scope checking the declaration
-  open import level
-```
+The file /usr/local/Cellar/agda/2.5.4.2/lib/agda/src/Level.agda can be accessed via several project roots. Both Level and level point to this file.
+When scope checking the declaration open import level
 
-My temporary fix for this is to create 'level' locally and rename to 'level_'.
-Then, open import 'level_'
+
+My temporary fix for this is to create 'level' locally and rename to 'level_'. Then, open import 'level_'
 
 I solved it by doing the following:
-
 1. clone https://github.com/williamdemeo/ial
-2. Per the README.md 
-   + cd to ~/.agda, and add a file called "libraries" to it (if it doesn't already exist), containing the full path to the .agda-lib file 
-contained in this directory (for the IAL version 1.3).
-   + Then create a file called "defaults", and add the word "IAL" to it (no quotes). 
-   + These steps tell Agda where the IAL library is, and that you want to include it when opening .agda files in emacs (or with the command-line tool).
-3. Note 1 & 2 allow me to work in ial/1.3, but to work in this repository, I needed to clone
-bool.agda and level.agda from ial/1.3 and rename them to bool1.agda and level1.agda to avoid name conflicts.
+2. Per it README.md:
+     + cd to ~/.agda, and add a file called "libraries" to it (if it doesn't already exist), containing the full path to the .agda-lib file contained in this directory (for the IAL version 1.3).
+     + Then create a file called "defaults", and add the word "IAL" to it (no quotes). 
+     + These steps tell Agda where the IAL library is, and that you want to include it when opening .agda files in emacs (or with the command-line tool).
+
+This allowed me to work in ial/1.3 without any name clashes. But to work in this [[https://github.com/adkelley/verified_fp_agda][repository]], I needed to copy bool.agda and level.agda from ial/1.3 into chapter [[https://github.com/adkelley/verified_fp_agda/tree/master/01][01]] and rename 
+them to bool1.agda and level1.agda.
  
