@@ -8,7 +8,7 @@ Meetup in San Francisco.  The purpose of this meetup is to work our way through 
 These are the steps that I took to install Agda and support it in my Emacs configuration on Mac OSX using [brew](https://docs.brew.sh/). There are alternate installation approaches so, when in doubt, [Read the Docs](https://agda.readthedocs.io/en/latest/overview.html).
 
 1. brew update && brew install agda
-   - Installs agda, and agda-mode into /usr/local/bin 
+   - Installs agda, agda-mode, etc. into /usr/local/bin 
    - CAUTION: This brew formula also installs emacs, etc. into /usr/local/bin.  I wish it hadn't or at least offered a way to prevent it.
 2. Add the following to your .emacs file:
   
@@ -17,7 +17,7 @@ These are the steps that I took to install Agda and support it in my Emacs confi
        (shell-command-to-string "agda-mode locate")))
    ```
 
-3. Test your installation by opening [peano.agda]() in emacs.  To run a check, type `C-c C-l` into emacs, or choose Load from the Agda menu. If your program checks correctly, there will be no error messages, no hole markers (yellow highlighting) and no orange-highlighted non-terminating sections. It should also say Agda: Checked at the bottom of the window, and you get syntax highlighting.  If it all worked then congratulations!
+3. Test your installation by copying and opening [peano.agda](https://github.com/adkelley/verified_fp_agda/blob/master/peano.agda) in emacs.  To run a check, type `C-c C-l` into emacs, or choose `Load` from the Agda menu. If your program checks correctly, there will be no error messages, no hole markers (yellow highlighting) and no orange-highlighted non-terminating sections. It should also say Agda: Checked at the bottom of the window, and you get syntax highlighting.  If it all worked then congratulations!
 
 
 ## Code examples from the book

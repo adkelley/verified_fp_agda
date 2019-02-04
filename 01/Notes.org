@@ -1,0 +1,18 @@
+* 01 Notes
+
+* TODO Fix problem importing 'level'
+
+I had the following when attempting to import 'level' in bool.agda:
+
+```
+.../verified_fp_agda/01/bool.agda:3,13-18
+The file /usr/local/Cellar/agda/2.5.4.2/lib/agda/src/Level.agda can
+be accessed via several project roots. Both Level and level point
+to this file.
+When scope checking the declaration
+  open import level
+```
+
+My temporary fix for this is to create 'level' locally and rename to 'level_'.
+Then, open import 'level_'
+ 
