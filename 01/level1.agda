@@ -1,6 +1,6 @@
 -- mostly adapted from Agda stdlib
 
-module level where
+module level1 where
 
 import Agda.Primitive 
 

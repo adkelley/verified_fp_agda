@@ -24,4 +24,24 @@ I solved it by doing the following:
 
 This allowed me to work in ial/1.3 without any name clashes. But to work in this [[https://github.com/adkelley/verified_fp_agda][repository]], I needed to copy bool.agda and level.agda from ial/1.3 into chapter [[https://github.com/adkelley/verified_fp_agda/tree/master/01][01]] and rename 
 them to bool1.agda and level1.agda.
- 
+
+** Exercises
+1.1
+  (a) tt
+  (b) ff
+  (c) ff
+1.2
+  (a) 𝔹
+  (b) 𝔹
+  (c) 𝔹 → 𝔹 → 𝔹
+  (d) Set
+1.3
+  [[file:./01/my-bool.agda][my-bool.agda]]
+1.4
+  [[file:./01/days.agda][days.agda]]
+1.5
+  [[file:./01/days.agda][days.agda]]
+1.6
+  [[file:./01/suits.agda][suits]]
+1.7
+  [[file:./01/suits.agda][suits]]

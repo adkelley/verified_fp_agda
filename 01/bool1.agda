@@ -1,6 +1,6 @@
-module bool where
+module bool1 where
 
-open import level
+open import level1
 
 ----------------------------------------------------------------------
 -- datatypes
